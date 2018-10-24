@@ -23,7 +23,39 @@ body {
 }
 
 
+
+
 @import "@material/tab-bar/mdc-tab-bar";
 @import "@material/tab-scroller/mdc-tab-scroller";
 @import "@material/tab-indicator/mdc-tab-indicator";
 @import "@material/tab/mdc-tab";
+
+.mdc-list-item__text {
+  white-space: normal;
+
+}
+
+.mdc-list-item {
+  min-height: 48px;
+  height: auto;
+  padding: 5px 16px;
+
+}
+
+.tablica {
+  display: table;
+}
+
+.yacheika {
+  display: table-cell;
+  padding: 0px 10px 0px 0px;
+}
+
+.my-surface {
+  @include mdc-ripple-surface;
+  @include mdc-ripple-radius-bounded;
+  @include mdc-states-base-color(black);
+  @include mdc-states-hover-opacity(.1);
+  @include mdc-states-focus-opacity(.3);
+  @include mdc-states-press-opacity(.4);
+}
